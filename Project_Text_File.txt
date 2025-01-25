@@ -1,0 +1,21 @@
+Student Marks Manager 
+Question: 
+Write a program to manage student marks. The program should: 
+● Allow users to add, view, and update marks for students (name, subject, and score). 
+● Calculate the average score for each student. 
+● Save student details to a text file for persistence. 
+● Use OOP to manage students and marks. 
+
+# A list to save student information
+# Each student info will be saved as dictionary & the dictionary will be saved in list.
+# We'll create a class named "student"
+  in the class some functions to add, update & calculate average
+# A continuous loop will run to run menu.
+# A menu will be shown to select option.
+# Choice from the menu will then be stored in a variable called 'choice'
+# According to choice value we'll call regarding functions
+# if user selects option 1 (Add or Update):
+      we'll take name, subject & score, call the function add or update
+# if user selects option 2 (View):
+      we'll take only name & show information by calling view function
+# break loop after completion
