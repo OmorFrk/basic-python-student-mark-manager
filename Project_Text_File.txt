@@ -19,3 +19,23 @@ Write a program to manage student marks. The program should:
 # if user selects option 2 (View):
       we'll take only name & show information by calling view function
 # break loop after completion
+
+def view_students(students):
+  """Displays all student information."""
+  if not students:
+    print("No students found.")
+  else:
+    for student in students:
+      print(f"Name: {student['name']}, Subject: {student['subject']}, Score: {student['score']}")
+my_file = open("StudentInfo.txt", "r") 
+data = my_file.read() 
+students = data.split("\n") 
+my_file.close() 
+
+def calculate_average(students):
+  name = input("Enter student name: ")
+  student_list = []
+  for student in students:
+    if student["name"].lower() == name.lower():
+      student_list.append(student["score"])
+  return sum(student_list)/len(student_list)
